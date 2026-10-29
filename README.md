@@ -1,3 +1,7 @@
+# Analisis Komparatif Model LSTM, Word2Vec, FastText, dan Attention dalam Analisis Sentimen Ulasan Pengguna Game Mobile Legends
+
+## 📌 Deskripsi
+
 Repositori ini berisi implementasi penelitian **"Analisis Komparatif
 Model LSTM, Word2Vec, FastText, dan Attention dalam Analisis Sentimen
 Ulasan Pengguna Game Mobile Legends"**. Penelitian berfokus pada
@@ -12,9 +16,9 @@ antara performa klasifikasi dan biaya komputasi.
 
 > **Temuan utama:** skenario 19, yaitu **FastText + LSTM
 > unidirectional + Dropout tanpa Attention**, memperoleh akurasi
-> **95,37%** pada eksperimen yang dilaporkan dalam tesis.
+> **95,37%** pada eksperimen yang dilakukan.
 
-## Tujuan Penelitian
+## 🎯 Tujuan
 
 -   Membandingkan representasi kata tanpa embedding, Word2Vec, dan
     FastText.
@@ -29,23 +33,23 @@ antara performa klasifikasi dan biaya komputasi.
 
 ## Hasil Utama
 
-Hasil berikut diambil dari naskah tesis. Waktu komputasi dapat berubah
+Hasil berikut diambil dari eksperimen yang dilakukan. Waktu komputasi dapat berubah
 tergantung perangkat keras, lingkungan software, dan konfigurasi
 eksekusi.
 
-  Metrik                             Hasil skenario terbaik
-  -------------------------------- ------------------------
-  Nomor skenario                                         19
-  Embedding                                        FastText
-  Arsitektur                            LSTM unidirectional
-  Dropout tambahan                                       Ya
-  Attention                                           Tidak
-  Akurasi                                        **95,37%**
-  Precision                                      **95,40%**
-  Recall                                         **95,37%**
-  F1-score                                       **95,36%**
-  Waktu training yang dilaporkan               706,03 detik
-  Waktu testing yang dilaporkan                  2,24 detik
+  | Metrik                            | Hasil skenario terbaik |
+  |--------------------------------|------------------------|
+  | Nomor skenario |                                        19 |
+  | Embedding      |                                  FastText |
+  | Arsitektur     |                       LSTM unidirectional |
+  | Dropout tambahan |                                       Ya |
+  | Attention        |                                   Tidak |
+  | Akurasi          |                              **95,37%** |
+  | Precision        |                              **95,40%** |
+  | Recall           |                              **95,37%** |
+  | F1-score         |                              **95,36%** |
+  | Waktu training   |             706,03 detik |
+  | Waktu testing    |               2,24 detik |
 
 Dataset penelitian terdiri dari **10.250 ulasan** yang telah diproses
 dan diberi label secara manual ke dalam dua kelas. Pembagian data
@@ -65,7 +69,7 @@ menggunakan 80% data training dan 20% data testing dengan `stratify` dan
     baik. Pemilihan embedding dan kesesuaian model terhadap
     karakteristik data juga penting.
 
-Angka hasil di atas adalah hasil yang dilaporkan dalam tesis, bukan
+Angka hasil di atas adalah hasil dari eksperimen, bukan
 jaminan bahwa notebook akan menghasilkan angka identik pada setiap
 eksekusi.
 
